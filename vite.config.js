@@ -11,4 +11,5 @@ export default defineConfig({
     "@": path.resolve(__dirname, "src"), //Add this line
   },
 },
+  base: process.env.VITE_BASE_PATH || "/Personal-Website"
 })
