@@ -6,10 +6,5 @@ import path from "path"; //Import path module
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
-  resolve: {
-  alias: {
-    "@": path.resolve(__dirname, "src"), //Add this line
-  },
-},
   base: process.env.VITE_BASE_PATH || "/Personal-Website"
 })
